@@ -1,0 +1,12 @@
+def implikacja(zmiennaP, zmiennaQ):
+    if zmiennaP==1 or zmiennaP==0 and zmiennaQ==1 or zmiennaQ==0:
+        if zmiennaP==1 and zmiennaQ==0:
+            return False
+        else:
+            return True
+print("Pierwszy argument:")
+argumentpierwszy = int(input())
+print("Drugi argument:")
+argumentdrugi = int(input())
+wynik = implikacja(argumentpierwszy, argumentdrugi)
+print("Wynik implikacji:", wynik)
